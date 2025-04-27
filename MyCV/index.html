@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julani Victor Chonco - Personal Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Julani Victor Chonco</h1>
+        <h2>Web Developer | Site Manager | Group CAS Support</h2>
+        <img src="Julani.jpg" alt="Portrait of Julani Victor Chonco, Site Manager">
+    </header>
+    <div class="nav">
+        <button class="tab" onclick="showContent('about')">About Me</button>
+        <button class="tab" onclick="showContent('skills')">Skills</button>
+        <button class="tab" onclick="showContent('experience')">Work Experience</button>
+        <button class="tab" onclick="showContent('education')">Education</button>
+        <button class="tab" onclick="showContent('contact')">Contact</button>
+        <button class="tab" onclick="showContent('search')">Search</button>
+    </div>
+    <div class="content">
+        <div id="about">
+            <h3>About Me</h3>
+            <p>"Hello and welcome to my page! I'm Julani Chonco, a seasoned site manager at Anglo American Mogalakwena with a passion for innovation and safety in the mining industry. With 8 years of experience in Collision Avoidance systems, I've developed a unique blend of technical expertise and leadership skills. As a holder of a National Diploma in Electrical Engineering and a Certificate in Software Engineering, I've always been driven to stay ahead of the curve. Currently, I'm excited to be expanding my skill set as a full-stack developer, eager to explore new possibilities at the intersection of technology and industry.
+
+                Outside of work, I'm grateful to share my life with my wonderful wife and two amazing kids. They keep me grounded and inspired.
+                
+                On this webpage, I'm looking forward to sharing my story, skills, and experiences with you. Let's connect and explore opportunities to collaborate, innovate, and make a meaningful impact.</p>
+        </div>
+        <div id="skills" style="display:none;">
+            <h3>Skills</h3>
+            <ul>
+                <li>Excellent troubleshooting and diagnostic skills</li>
+                <li>Product support and customer assistance</li>
+                <li>Computer-Aided Systems (CAS) operations</li>
+                <li>Strong interpersonal communication</li>
+                <li>Team collaboration and technical documentation</li>
+            </ul>
+        </div>
+        <div id="experience" style="display:none;">
+            <h3>Work Experience</h3>
+            <p><strong>Product Support Technician</strong><br>Providing technical support for CAS systems, ensuring smooth operations, and diagnosing and resolving product-related issues.</p>
+            <p><strong>CAS Specialist</strong><br>Handling CAS systems, monitoring performance, and providing training and support to teams on new technological implementations.</p>
+        </div>
+        <div id="education" style="display:none;">
+            <h3>Education</h3>
+            <p><strong>National Diploma in Electrical Engineering (Process Instrumentation)</strong><br>Mangosuthu University of Technology, 2013 - 2019</p>
+            <p><strong>High School</strong><br>Simunye High School, 2006 - 2010</p>
+        </div>
+        <div id="contact" style="display:none;">
+            <h3>Contact Details</h3>
+            <p><strong>Name:</strong> Julani Victor Chonco</p>
+            <p><strong>Phone:</strong> +27 76 644 0981</p>
+            <p><strong>Email:</strong> <a href="mailto:jvchonco@gmail.com">jvchonco@gmail.com</a></p>
+            <form class="contact-form" action="/submit-feedback" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="search" style="display:none;">
+            <h3>Search My CV</h3>
+            <form onsubmit="searchContent(); return false;">
+                <input type="text" name="query" id="search-box" placeholder="Enter keyword to search" required>
+                <button type="submit">Search</button>
+            </form>
+            <div id="search-results"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
